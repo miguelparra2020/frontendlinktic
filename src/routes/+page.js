@@ -4,15 +4,13 @@ export const prerender = true;
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, depends }) {
 	const response = await fetch('https://backend-linktic-project-miguel-paez.onrender.com/products');
-	const products = await response.json();
-
-    // Imprime los productos en la consola
-    console.log(products);
+	const products = await response.json()
+	console.log(products)
 
 	// Utiliza `depends` para invalidar los datos cuando sea necesario
 	depends('app:random');
 
 	return {
 		products
-	};
+	}
 }

@@ -10,6 +10,7 @@
   <ul class="space-y-4">
     {#each products as product}
       <li class="border p-4 rounded-lg shadow-md">
+        <img src={product.imgProduct} alt={product.nameProduct}>
         <h2 class="text-2xl font-semibold">{product.nameProduct}</h2>
         <p class="text-gray-700">{product.descriptionProduct}</p>
         <p class="text-lg font-bold">Precio: ${product.priceProduct}</p>

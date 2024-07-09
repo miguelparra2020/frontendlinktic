@@ -4,6 +4,7 @@ export interface ProductEntry {
   nameProduct: string
   descriptionProduct: string
   priceProduct: number
+  imgProduct: string
 }
 
 // export type NonSensitiveInfoProductEntry = Pick<ProductEntry, 'id_product' | 'name_product' | 'description_product'>
